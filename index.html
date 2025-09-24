@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sujendra Giri Prasad Bharadwaj</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sujendra Giri Prasad Bharadwaj</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile_picture.jpeg" alt="Sujendra Giri Prasad Bharadwaj profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sujendra Giri Prasad Bharadwaj</h1>
+        <p class="section__text__p2">Full Stack Developer and Automation</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume - Sujendra Giri Prasad Bharadwaj latest.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/sujendra-bharadwaj', '_blank')"
+            />
+    
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Sujendra-23?tab=repositories', '_blank')"
+            />
+
+
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile_picture.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+            <div class="education-entry">
+            <h4>Wakefit Innovations Limited - Bengaluru, Karnataka</h4>
+            <p><strong>Quality Assurance Engineer (Automation) : June 2023 – July 2025</strong></p>
+            <ul>
+            <li>Built backend solutions with Django, SQL, MongoDB, Redis, and microservices (gRPC, Docker); optimized architecture and implemented analytics</li>
+            <li>Automated testing with Python (Selenium, Playwright, BeautifulSoup); validated APIs (Postman/Swagger); executed security, load, and performance tests — reduced regression by 35%</li>
+            <li>Managed AWS deployments, CI/CD with Jenkins, and Agile workflows with Jira</li>
+            <li>Optimized fulfillment workflows (500+ shipments) and integrated Shipsy logistics — reduced delays by 7% and errors by 10%</li>
+            </ul>
+            </ul>
+            <h4>Ethnotech Academic Solutions - Bengaluru, Karnataka</h4>
+            <p><strong>Network Design Intern : October 2022 – December 2022</strong></p>
+            <ul>
+            <li>Engineered and managed company network via Cisco Packet Tracer, performing network administration with 15+ IPs, 200+ packet traces, and 100+ ping tests, increasing reliability by 11% and strengthening architecture and security; automated routine monitoring and troubleshooting processes, reducing downtime and improving network efficiency</li>
+            </ul>
+            </ul>
+            
+        </div>
+            </div>
+            <div class="details-container">
+    <img
+        src="./assets/education.png"
+        alt="Education icon"
+        class="icon"
+    />
+    <h3>Education</h3>
+
+        <!-- USC -->
+        <div class="education-entry">
+            <h4>University of Southern California - Los Angeles, California</h4>
+            <p><strong>Master of Science in Computer Science  August 2025 – Present</strong></p>
+            <ul>
+            <li>Developing expertise in Advanced Analysis of Algorithms, Data Structures and Algorithms, System Design, Web Development, Database Management, Full Stack Development, Software Development, Microservices, Java, Python, C++, Software Engineering</li>
+            </ul>
+        </div>
+
+        <!-- SJB Institute of Technology -->
+        <div class="education-entry">
+            <h4>SJB Institute of Technology -  Bengaluru, Karnataka</h4>
+            <p><strong>Bachelor’s in Electronics and Communication Engineering</strong> August 2019 – May 2023</p>
+            <ul>
+            <li>Graduated with an aggregate of <strong>3.56 GPA</strong></li>
+            <li>Skills Gained: Digital System Design, C and Python Programming, Data Structures and Algorithms, Web Development, VLSI, Verilog, Embedded C, Computer Organization and Architecture, Computer Networks</li>
+            </ul>
+        </div>
+        </div>
+
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+  <div class="about-containers">
+
+    <!-- Programming Languages, Frameworks and Databases -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Programming Languages, Frameworks & Databases</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Java | Python | C++ | C | C# | Go | PHP | JavaScript | HTML/CSS</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Django | SpringBoot | React.js | Next.js | Angular</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Selenium | Playwright | Pytest | Typescript | gRPC | Docker | Allure</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>MySQL | PostgreSQL | MongoDB | NoSQL | Redis</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- AI/ML & Data Science -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">AI/ML & Data Science</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>NLP | PySpark | OpenCV | Scikit-learn</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Data Analysis | Transformation | Visualization | Analytics</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Power BI | Tableau | Hadoop | Data Warehouse</h3>
+            <p>Basic</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>JSON | Scala | Statistics | Regression | Data Mining | Big Data | Google Analytics</h3>
+            <p>Basic</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Computer Science Fundamentals -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Computer Science Fundamentals</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>DSA | OOP | DBMS | Application Architecture | Security</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Discrete Event Simulation | Frontend & Backend Development</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Code Review | API | Software Development | IT | Deployment</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- System, Networking & Distributed Systems -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">System, Networking & Distributed Systems</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Performance Optimization | Debugging | Modeling | Linux Networking</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>IoT | TCP/IP | DNS | SSH | SSL | Cisco Packet Tracer</h3>
+            <p>Basic</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Distributed Systems | Networking Protocols | Multi-threaded & Multi-core Systems</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Cloud & DevOps -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Cloud & DevOps</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>AWS | Azure (basic)</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Docker | Kubernetes | Jenkins | Git | GitHub | Bitbucket</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Apache Kafka | Confluence | Atlassian</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Design & Productivity -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Design & Productivity</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Product & UI/UX | Figma | Canva | Framer | Webflow</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Adobe Illustrator | Photoshop | Creative Suite | Dreamweaver</h3>
+            <p>Basic</p>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Microsoft Office | Jira | Notion</h3>
+            <p>Intermediate</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/login_page.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Login Page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sujendra-23/Login-Page'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sujendra-23/Login-Page'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sales_dashboard.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sales-dashboard</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sujendra-23/Sales-dashboard'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sujendra-23/Sales-dashboard'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+            
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sujendra2001@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Sujendra Giri Prasad Bharadwaj. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
