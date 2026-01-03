@@ -158,6 +158,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  object-fit: cover;
   border-radius: 50%;
 }
 
