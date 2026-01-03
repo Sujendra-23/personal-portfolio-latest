@@ -270,9 +270,6 @@ section {
   gap: 2rem;
 }
 
-.about-pic {
-  display: none; /* hide photo */
-}
 
 .details-container {
   padding: 1.5rem;
