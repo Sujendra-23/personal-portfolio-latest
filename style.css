@@ -139,8 +139,8 @@ a:hover {
 section {
   padding-top: 4vh;
   margin: 0 10rem;
-  min-height: auto; /* changed for responsiveness */
-  position: relative; /* for arrow positioning */
+  min-height: auto; /* responsive content height */
+  position: relative; /* for arrows */
 }
 
 /* PROFILE SECTION */
@@ -250,7 +250,7 @@ section {
   gap: 2rem;
   margin: 2rem 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* keep table/grid layout */
 }
 
 .about-details-container {
@@ -264,9 +264,8 @@ section {
 }
 
 .arrow {
-  position: relative; /* changed from absolute */
   display: block;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 0 auto; /* centered */
   cursor: pointer;
   height: 2.5rem;
 }
@@ -289,6 +288,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .article-container {
@@ -297,13 +297,13 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: flex-start; /* table/grid feel */
 }
 
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
@@ -443,6 +443,10 @@ footer p {
   .btn-container {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .article-container {
+    justify-content: center;
   }
 }
 
