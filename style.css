@@ -27,7 +27,7 @@ a,
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
+/* NAVIGATION */
 
 nav,
 .nav-links {
@@ -60,9 +60,6 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-}
-
-.logo:hover {
   cursor: default;
 }
 
@@ -111,11 +108,6 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-links li {
-  list-style: none;
 }
 
 .menu-links.open {
@@ -139,8 +131,8 @@ a:hover {
 section {
   padding-top: 4vh;
   margin: 0 10rem;
-  min-height: auto; /* responsive content height */
-  position: relative; /* for arrows */
+  min-height: auto;
+  position: relative;
 }
 
 /* PROFILE SECTION */
@@ -169,10 +161,6 @@ section {
   font-weight: 600;
 }
 
-.section__text__p1 {
-  text-align: center;
-}
-
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -189,8 +177,6 @@ section {
   margin-top: 1rem;
   gap: 1rem;
 }
-
-/* ICONS */
 
 .icon {
   cursor: pointer;
@@ -228,117 +214,100 @@ section {
   color: white;
 }
 
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
 .btn-color-2 {
   background: none;
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border-color: rgb(255, 255, 255);
 }
 
-/* ABOUT SECTION */
+/* ABOUT / EXPERIENCE / SKILLS CONTAINERS */
 
-#about {
-  position: relative;
-}
-
-.about-containers {
-  gap: 2rem;
-  margin: 2rem 0;
+.details-container {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid rgb(163, 163, 163);
+  text-align: left;
   display: flex;
-  flex-wrap: wrap; /* keep table/grid layout */
-}
-
-.about-details-container {
-  justify-content: center;
   flex-direction: column;
-  display: flex;
+  gap: 0.5rem;
 }
 
-.about-pic {
-  border-radius: 2rem;
+.about-containers,
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
+
+.article-container article {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.article-container article h3,
+.article-container article p {
+  margin: 0;
+}
+
+/* EXPERIENCE / EDUCATION TABLES */
+
+.education-entry {
+  margin-top: 1rem;
+}
+
+.education-entry h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.education-entry p {
+  margin: 0.2rem 0;
+}
+
+.education-entry ul {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+}
+
+.section__pic-container img,
+.about-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+/* ARROWS */
 
 .arrow {
   display: block;
-  margin: 2rem auto 0 auto; /* centered */
+  margin: 2rem auto 0 auto;
   cursor: pointer;
   height: 2.5rem;
 }
 
-/* EXPERIENCE SECTION */
-
-#experience {
-  position: relative;
-  padding-bottom: 5rem; /* space for arrow */
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: flex-start; /* table/grid feel */
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: flex-start;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
 /* PROJECTS SECTION */
 
-#projects {
-  position: relative;
-}
-
 .color-container {
-  border-color: rgb(163, 163, 163);
+  border: 1px solid rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
 }
 
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
-/* CONTACT */
+/* CONTACT SECTION */
 
 #contact {
   display: flex;
@@ -350,9 +319,8 @@ article .icon {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-radius: 1rem;
+  border: 1px solid rgb(163, 163, 163);
   background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
@@ -379,7 +347,7 @@ article .icon {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
+/* FOOTER */
 
 footer {
   margin: 0 1rem;
@@ -389,28 +357,7 @@ footer p {
   text-align: center;
 }
 
-/* EDUCATION ENTRY */
-
-.education-entry {
-  margin-top: 1rem;
-}
-
-.education-entry h4 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.education-entry p {
-  margin: 0.2rem 0;
-}
-
-.education-entry ul {
-  margin: 0.5rem 0 0 1.2rem;
-  padding: 0;
-}
-
-/* RESPONSIVE ADJUSTMENTS */
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
   section {
@@ -443,10 +390,6 @@ footer p {
   .btn-container {
     flex-direction: column;
     gap: 0.5rem;
-  }
-
-  .article-container {
-    justify-content: center;
   }
 }
 
