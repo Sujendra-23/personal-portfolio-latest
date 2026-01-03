@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    min-height: 83vh; /* FIXED */
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -8,7 +8,7 @@
   }
   #contact,
   #projects {
-    height: fit-content;
+    min-height: fit-content; /* SAFE */
   }
 }
 
@@ -32,7 +32,7 @@
   }
   section,
   .section-container {
-    height: fit-content;
+    min-height: auto; /* FIXED */
   }
   section {
     margin: 0 5%;
@@ -50,17 +50,17 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    min-height: 40vh; /* FIXED */
   }
   #profile {
-    height: 83vh;
+    min-height: 83vh; /* FIXED */
     margin-bottom: 0;
   }
   article {
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
+    min-height: fit-content;
     margin-bottom: 2rem;
   }
   .about-containers,
@@ -89,6 +89,7 @@
   .section__pic-container {
     width: auto;
     height: 46vw;
+    max-height: 260px; /* SAFETY FIX */
     justify-content: center;
   }
   .section__text__p2 {
