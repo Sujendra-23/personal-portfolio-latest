@@ -154,13 +154,12 @@ section {
 }
 
 .section__pic-container {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  border-radius: 50%; /* circular container */
+  overflow: hidden;   /* ensures image is clipped to circle */
 }
 
 .section__pic-container img {
