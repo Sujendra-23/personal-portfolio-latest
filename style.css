@@ -154,10 +154,13 @@ section {
 }
 
 .section__pic-container {
-  width: min(160px, 60vw);
+  width: auto;
+  max-width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
 }
 
 .section__pic-container img {
