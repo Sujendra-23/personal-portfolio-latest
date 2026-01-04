@@ -155,8 +155,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: auto 0;
   border-radius: 50%; /* circular container */
   overflow: hidden;   /* ensures image is clipped to circle */
